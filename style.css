@@ -1,0 +1,256 @@
+body,p{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+.header{
+    width: 100%;
+    height:100vh;
+    position: relative;
+    /* background-color: black; */
+}
+.menu{
+    position:fixed;
+    right: 0;
+    /* left: 0; */
+    top:-22px;
+    width: 100%;
+    text-align: right;
+    height: 40px;
+    /* background-color: #d5cdb0; */
+    /* height:100px ; */
+    /* background-color: #d5cdb0; */
+}
+a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(247, 233, 233);
+    transform: scale(1);
+}
+.img{
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    
+}
+.img_header{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.message{
+    position: fixed;
+    top: 80%;
+    color: blue;
+    left: -115px;
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    background-color:#d5cdb0;
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 0 25px 25px 0;
+    opacity: 0.6;
+    /* left: -100px; */
+}
+.message:hover{
+    left: 0;
+    opacity: 1;
+    transition: 0.5s;
+}
+.menu a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+/* SKILLL */
+.Skill{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+.Skill_content{
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    padding:0 0 50px 0;
+    /* background-color:rgb(214, 218, 225); */
+}
+
+.text_my_skills{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.chart{
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    height: auto;
+}
+.html{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    background-color: #ebe8ee;
+    border-radius: 10px;
+    line-height: 30px;
+    margin-top: 24px;
+}
+.text_html{
+    width:20%;
+    background-color: blue;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.percent{
+    width: 0;
+    border-radius: 0 10px 10px 0;
+}
+.percent_html{
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    text-align: right;
+}
+
+.text_js{
+    width:20%;
+    background-color:orange;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.percent_js{
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    text-align: right;
+}
+.percent_js_js{
+    width: 0;
+    border-radius: 0 10px 10px 0;
+    /* background-color:#8f8ff2; */
+}
+.text_css{
+    width:20%;
+    background-color:#e743b6;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.percent_css{
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    text-align: right;
+}
+.percent_css_css{
+    width: 0;
+    border-radius: 0 10px 10px 0;
+    /* background-color:#fdc45a; */
+}
+.text_react{
+    width:20%;
+    background-color: gray;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.percent_react{
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    text-align: right;
+}
+.percent_react_react{
+    width: 0;
+    border-radius: 0 10px 10px 0;
+    background-color:#a8a0a0;
+}
+
+
+/* ABOUT */
+.About{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.text_about{
+    text-align: center;
+    padding: 50px 20px 50px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+.content_about{
+    max-width: 1000px;
+    height: auto;
+    /* overflow: hidden; */
+    /* background-color: antiquewhite; */
+    margin: 0 auto;
+    display: flex;
+}
+.avatar{
+    width: 50%;
+    height: auto;
+    /* overflow: hidden; */
+}
+.title_about{
+    width: 50%;
+    padding: 0px 20px;
+    overflow: hidden;
+
+    text-align: justify;
+}
+
+/* Project */
+.my_project{
+    width: 100%;
+    height: auto;
+}
+.text_project{
+    text-align: center;
+    padding: 0px 0 50px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+.content_my_project{
+    max-width:1000px ;
+    height: auto;
+    margin: auto;
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+.main_view{
+    width: 80%;
+    /* width: 500px; */
+    height: 25rem;
+    margin: 0 auto;
+}
+.main_view #main{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.side_view{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.side_view img{
+    width: 9rem;
+    height: 7rem;
+    /* object-fit: cover; */
+    cursor: pointer;
+    margin:0.5rem;
+}

@@ -6,19 +6,20 @@ window.onload = function () {
 }
 window.onscroll = function () {
     // var about= document.querySelectorById('about')
-    if (document.documentElement.scrollTop >= 900) {
+    if (document.documentElement.scrollTop >= 500) {
         var a = document.querySelector('.menu');
         Object.assign(a.style,{
             transition:"all 0.3s ease",
             width:"100%",
             height:"40px",
-            backgroundColor:'rgb(74, 83, 83)',
+            backgroundColor:'#a9b9b7',
             boxShadow:"0px 0px 10px 0px black",
             transition:"0s",
             opacity:"1",
+            zIndex:"10",
         })
     }
-    else if (document.documentElement.scrollTop <900) {
+    else if (document.documentElement.scrollTop <500) {
         var a = document.querySelector('.menu');
         Object.assign(a.style,{
             width:"100%",
@@ -29,7 +30,7 @@ window.onscroll = function () {
         })
     }
     
-    if (document.documentElement.scrollTop >900) {
+    if (document.documentElement.scrollTop >800) {
         var b = document.querySelector('.percent')
         Object.assign(b.style, {
             width: "80%",

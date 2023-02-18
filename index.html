@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.min.css">
     <script src="./test.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <title>Document</title>
 </head>
@@ -17,12 +18,14 @@
     <!-- HEADER  -->
     <div class="header">
         <div class="img">
-            <img class="img_header" src="https://images.unsplash.com/photo-1421757350652-9f65a35effc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80" alt="">
+            <img class="img_header" style="object-fit: cover; width: 100%;height: 100%;"
+                src="./image/iphone.jpg"
+                alt="">
         </div>
         <div class="menu">
-            <a href="#" class="link_about">About</a>
-            <a href="#" class="link contact">Contact</a>
-            <a href="#" class="link hotline">Hotline</a>
+            <a class="menu_link" href="#about" class="link_about">ABOUT</a>
+            <a class="menu_link" href="#portfolio" class="link contact">PORTFOLIO</a>
+            <a class="menu_link" href="#contact" class="link hotline">CONTACT</a>
         </div>
         <div>
             <a href="https://www.facebook.com/tannguyen2302/" class="message">
@@ -34,19 +37,25 @@
                 </div>
             </a>
         </div>
+        <div class="info">
+            <h1 class="name">NGUYỄN VĂN TẦN</h1>
+            <h3 style="color:#fff;font-weight: 100;padding:0 90px;">
+                Font-end Developer
+            </h3>
+        </div>
     </div>
     <!-- ABOUT -->
-    <div class="About">
-        <p class="text_about">
-            ABOUT
+    <div id="about" class="About">
+        <p class="text_about" style="color: blueviolet;letter-spacing: 2px;">
+            ABOUT ME
         </p>
         <div class="content_about">
             <div class="avatar">
-                <img src="./image/kiyeu.jpg" style="object-fit: cover;"
-                    width="100%" height="400px" alt="">
+                <img src="./image/kiyeu.jpg" style="object-fit: cover;" width="100%" height="400px" alt="">
             </div>
             <div class="title_about">
-                <p>Xin chào, tôi là Nguyễn Văn Tần, là một người hòa đồng, vui tính. Tôi có niềm đam mê với công nghệ và thiết kế. 
+                <p>Xin chào, tôi là Nguyễn Văn Tần, là một người hòa đồng, vui tính. Tôi có niềm đam mê với công nghệ và
+                    thiết kế.
                     Tôi hiện tại đang là sinh viên năm 4 đại học Công nghiệp Hà Nội chuyên ngành Hệ thống thông tin.</p>
             </div>
         </div>
@@ -55,16 +64,16 @@
     <!-- SKILL -->
     <div class="Skill">
         <div class="Skill_content">
-            <p class="text_my_skills">
+            <!-- <p class="text_my_skills">
                 MY SKILLS
-            </p>
+            </p> -->
             <div class="chart">
                 <div class="html">
-                    <div class="text_html" >
+                    <div class="text_html">
                         HTML
                     </div>
                     <div class="percent_html">
-                        <div class="percent"  >
+                        <div class="percent">
                             80%
                         </div>
                     </div>
@@ -104,9 +113,12 @@
     </div>
 
     <!-- PROJECT -->
-    <div class="my_project">
-        <p class="text_project">
-            MY PROJECT
+    <div id="portfolio" class="my_project">
+        <p class="text_project" style="color: blueviolet;letter-spacing: 2px;">
+            PORTFOLIO
+        </p>
+        <p class="text_my_skills">
+            Xin chào, dưới đây là các dự án mà tôi đã hoàn thành.
         </p>
         <div class="content_my_project">
             <!-- Container for our gallery -->
@@ -118,23 +130,167 @@
 
                 <!-- All images with side view -->
                 <div class="side_view">
-                    <img src="./image/reactMovies.jpg" onclick="change(this.src)">
-                    <img src="./image/theBand.jpg" onclick="change(this.src)">
-                    <img src="./image/lego.jpg" onclick="change(this.src)">
-                    <img src="./image/banking.jpg" onclick="change(this.src)">
+                    <div class="content_img">
+                        <img class="img_project" src="./image/reactMovies.jpg" onclick="change(this.src)">
+                    </div>
+                    <div class="content_img">
+                        <img class="img_project" src="./image/theBand.jpg" onclick="change(this.src)">
+                    </div>
+                    <div class="content_img">
+                        <img class="img_project" src="./image/lego.jpg" onclick="change(this.src)">
+                    </div>
+                    <div class="content_img">
+                        <img class="img_project" src="./image/banking.jpg" onclick="change(this.src)">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="contact" class="contact" style="max-width: 1000px;margin: auto;">
+        <section class="mb-4">
 
-
-
-
-
-
-
-
-
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4" style="color: blueviolet;letter-spacing: 2px;">CONTACT ME</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Không quan trọng là bạn có muốn làm việc chung với tôi hay không, hoặc chỉ là 
+                để gửi một lời chào hỏi, đừng ngần ngại mà gửi mail cho tôi nhé. Tôi vẫn luôn ở đây để lắng nghe mọi điều từ bạn..</p>
+        
+            <div class="row">
+        
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        
+                        <!--Grid row-->
+                        <div class="row">
+        
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                        </div>
+                        <!--Grid row-->
+        
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+        
+                        <!--Grid row-->
+                        <div class="row">
+        
+                            <!--Grid column-->
+                            <div class="col-md-12">
+        
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <!--Grid row-->
+        
+                    </form>
+        
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary" href="#">Send</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x" style="color:blueviolet"></i>
+                            <p>HaNoi, VietNam</p>
+                        </li>
+        
+                        <li><i class="fas fa-phone mt-4 fa-2x" style="color:blueviolet"></i>
+                            <p>0369064083</p>
+                        </li>
+        
+                        <li><i class="fas fa-envelope mt-4 fa-2x" style="color:blueviolet"></i>
+                            <p>nguyenvantan230201@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+        
+            </div>
+        
+        </section>
+    </div>
+    <div class="footer">
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/tannguyen2302/" role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+          
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+          
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                  ><i class="fab fa-google"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+          
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+          
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Tannguyen230201" role="button"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <h2>
+                    CONNECT WITH ME
+                </h2> 
+            </div>
+            <!-- Copyright -->
+          </footer>
+    </div>
 
 </body>
 
